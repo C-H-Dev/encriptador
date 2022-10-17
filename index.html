@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="pictures/Vector.png" alt="logo alura" class="logo-alura" id="logo-alura">
+    </header>
+
+
+    <main>
+        <section class="solicitud-encriptador">
+            <textarea class="texto-ingresado" id="texto-ingresado" cols="30" rows="10"
+                placeholder="Ingrese el texto aqui" onchange="campoVacio()"></textarea>
+            <div class="contenedor-botones">
+                <p class="indicacion">Solo letras minúsculas y sin acentos</p>
+                <button class="btnencriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btndesencriptar" onclick="btnDesencirptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="resultado-encriptador">
+            <textarea Class="texto-resultado" id="texto-resultado" cols="30" rows="10"></textarea>
+            <div class="contenedor-mensaje">
+                <p class="primer-parrafo">Para empezar</p>
+                <p>Ingresa el texto y selecciona encriptar o desencriptar.</p>
+            </div>
+            <button class="btncopiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+    </main>
+
+    <div class="overlay texto-vacio">
+        <div class="contenedor-mensaje-emergente">
+            <img src="pictures/texto_vacio.png" alt="imagen de campo vacio">
+            <p class=primer-parrafo>¡Olvidaste el texto!</p>
+            <button class="btncerrar" onclick="btnCerrar()">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="overlay texto-copiado">
+        <div class="contenedor-mensaje-emergente">
+            <img src="pictures/texto_copiado.png" alt="imagen de campo vacio">
+            <p class=primer-parrafo>¡El texto fue copiado!</p>
+            <button class="btncerrar" onclick="btnCerrar()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+    <footer>
+        <div class="info-dev">
+            <p>About developer</p>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><img src="pictures/GitHub-Mark-64px.png" alt="Logo de GitHub" id="git-hub"></a>
+            <a href="https://www.linkedin.com/in/guerrero-tian/" target="_blank" rel="noopener noreferrer"><img src="pictures/linkedin.png" alt="" id="linkedin"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+body {
+    background-color: #0066B3;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header img {
+    position: absolute;
+    padding: 1rem 0 0 1.2rem;
+    left: 8rem;
+    top: 1rem;
+}
+
+main {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.solicitud-encriptador {
+    position: absolute;
+    width: 50rem;
+    height: 52.1rem;
+    left: 20rem;
+    /*border: solid black;*/
+}
+
+.texto-ingresado {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    width: 44rem;
+    left: 4.5rem;
+    top: 6rem;
+    border: none;
+    resize: none;
+    background-color: #FFFFFF;
+    outline: none;
+    border: 0.4rem solid black;
+    border-radius: 1.5rem;
+
+}
+
+.contenedor-botones {
+    position: absolute;
+    left: 3rem;
+    top: 48rem;
+}
+
+.indicacion {
+    position: absolute;
+    font-size: 1rem;
+    left: 2rem;
+    bottom: 3.6rem;
+
+}
+
+.indicacion:before {
+    content: "❗";
+}
+
+.contenedor-botones button {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    padding: 0.3e;
+    width: 21rem;
+    height: 4.1rem;
+    margin-left: 2rem;
+    border: 0.4rem solid black;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4rem black;
+}
+
+.btnencriptar {
+    background-color: #FFE066;
+
+}
+
+.btnencriptar:active {
+    background-color: #9966ff;
+    transform: translateY(0.1rem);
+    box-shadow: 0 0.2rem black;
+}
+
+.btndesencriptar {
+    background-color: #FFFFFF;
+}
+
+.btndesencriptar:active {
+    background-color: #9966ff;
+    transform: translateY(0.1rem);
+    box-shadow: 0 0.2rem black;
+}
+
+
+.resultado-encriptador {
+    position: absolute;
+    width: 25rem;
+    height: 50.1rem;
+    left: 80.5rem;
+    top: 6rem;
+    background-color: #FFFFFF;
+    border: solid 0.4rem;
+    border-radius: 2rem;
+}
+
+.texto-resultado {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    border: none;
+    resize: none;
+    width: 20.1rem;
+    height: 30rem;
+    top: 1rem;
+    left: 1.2em;
+    background-image: url(pictures/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+}
+
+.contenedor-mensaje {
+    position: absolute;
+    top: 32rem;
+    left: 0.2rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.primer-parrafo {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+}
+
+.btncopiar {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    padding: 0.3rem;
+    position: absolute;
+    width: 21rem;
+    height: 4.1rem;
+    left: 2rem;
+    top: 41.9rem;
+    background-color: #FFFFFF;
+    border: 0.4rem solid black;
+    border-radius: 1.5rem;
+    visibility: hidden;
+    box-shadow: 0 0.4rem black;
+}
+
+.btncopiar:active {
+    background-color: #9966ff;
+    transform: translateY(0.1rem);
+    box-shadow: 0 0.2rem black;
+}
+
+
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(102, 190, 255, 0.5);
+    visibility: hidden;
+}
+
+.contenedor-mensaje-emergente {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: 25rem;
+    background-color: #FFE066;
+    border: 0.4rem solid black;
+    border-radius: 1.5rem;
+
+}
+
+.contenedor-mensaje-emergente img {
+    position: absolute;
+    left: 6rem;
+    top: 3rem;
+    width: 13rem;
+
+}
+
+.contenedor-mensaje-emergente p {
+    position: absolute;
+    left: 4.6rem;
+    top: 15rem;
+    font-size: 1.7rem;
+}
+
+.btncerrar {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    padding: 0.3rem;
+    position: absolute;
+    width: 16rem;
+    height: 4.1rem;
+    left: 4.7rem;
+    top: 20rem;
+    background-color: #FFFFFF;
+    border: 0.4rem solid black;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.4rem black;
+}
+
+.btncerrar:active {
+    background-color: #9966ff;
+    transform: translateY(0.1rem);
+    box-shadow: 0 0.2rem black;
+}
+
+.active {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.info-dev {
+    position: absolute;    
+    top: 53rem;
+    left: 55rem;
+
+}
+
+.info-dev p{
+    margin-left: 1.3rem;
+}
+
+.info-dev img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 3rem;
+}
+
+.info-dev #git-hub:hover{
+    
+    
+}
